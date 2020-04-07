@@ -375,7 +375,7 @@ class Keyboard {
   }
 
   drawKeys() {
-    this.keys.forEach(item => {
+    this.keys.forEach((item) => {
       const keyElement = document.createElement('div');
       keyElement.classList.add('key');
       keyElement.dataset.code = item.code;
@@ -390,10 +390,10 @@ class Keyboard {
   }
 
   addListeners() {
-    this.keyboard.addEventListener('mousedown', event => this.switchDown(event));
-    document.addEventListener('keydown', event => this.switchDown(event));
-    document.addEventListener('mouseup', event => this.switchUp(event));
-    document.addEventListener('keyup', event => this.switchUp(event));
+    this.keyboard.addEventListener('mousedown', (event) => this.switchDown(event));
+    document.addEventListener('keydown', (event) => this.switchDown(event));
+    document.addEventListener('mouseup', (event) => this.switchUp(event));
+    document.addEventListener('keyup', (event) => this.switchUp(event));
   }
 
   switchDown(event) {
