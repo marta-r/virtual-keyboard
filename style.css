@@ -167,3 +167,15 @@ textarea:focus{outline:none;}
 .right {
   font-size: 12px;
 }
+
+
+.info {
+  
+  text-align: center;
+  font-size: 16px;
+  padding-top: 30px;
+  letter-spacing: 0.5px;
+  color: #989899;
+  cursor: pointer;
+  user-select: none;
+}

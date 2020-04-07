@@ -354,9 +354,14 @@ class Keyboard {
     this.keyboard = document.createElement('div');
     this.keyboard.classList.add('keyboard');
 
+    this.info = document.createElement('div');
+    this.info.classList.add('info');
+    this.info.innerHTML = 'Windows. Переключение языка: ctrl + shift';
+
     document.body.appendChild(this.section);
     this.section.appendChild(this.textar);
     this.section.appendChild(this.keyboard);
+    this.section.appendChild(this.info);
     this.addStyles();
     this.drawKeys();
     this.addListeners();
